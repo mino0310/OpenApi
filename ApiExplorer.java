@@ -26,10 +26,8 @@ public class ApiExplorer {
             rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
         }
         String result = " ";
-        StringBuilder sb = new StringBuilder();
         String line;
         while ((line = rd.readLine()) != null) {
-            // sb.append(line);
             result = result + line + "\n";
         }
         rd.close();
